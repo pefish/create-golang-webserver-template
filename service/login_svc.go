@@ -15,14 +15,14 @@ type LoginSvcClass struct {
 var LoginSvc = LoginSvcClass{}
 
 func (this *LoginSvcClass) Init(opts ...interface{}) service.InterfaceService {
-	this.SetName(`storm钱包服务api`)
-	this.SetPath(`/api/storm-wallet`)
+	this.SetName(`oauth登录授权服务`)
+	this.SetPath(`/api/oauth`)
 	api_strategy.ParamValidateStrategy.SetErrorCode(constant.PARAM_ERROR)
 
 	this.SetRoutes(map[string]*api_channel_builder.Route{
-		`get_new_deposit_address`: {
-			Description: "获取新充值地址",
-			Path:        "/v1/new-address",
+		`login post`: {
+			Description: "登录",
+			Path:        "/v1/login",
 			Method:      "POST",
 			Strategies: []api_channel_builder.StrategyRoute{
 
@@ -32,6 +32,16 @@ func (this *LoginSvcClass) Init(opts ...interface{}) service.InterfaceService {
 				Username: `test`,
 			},
 			Controller: controller.LoginController.Login,
+		},
+		`login get`: {
+			Description: "登录页面",
+			Path:        "/v1/login",
+			Method:      "GET",
+			Strategies: []api_channel_builder.StrategyRoute{
+
+			},
+			ParamType: api_strategy.ALL_TYPE,
+			Controller: controller.LoginController.LoginGet,
 		},
 	})
 	return this
