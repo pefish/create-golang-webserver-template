@@ -1,6 +1,8 @@
 package main
 
 import (
+	"_template_/constant"
+	"_template_/route"
 	"fmt"
 	"github.com/pefish/go-application"
 	"github.com/pefish/go-config"
@@ -11,8 +13,6 @@ import (
 	"github.com/pefish/go-mysql"
 	"os"
 	"runtime/debug"
-	"template/constant"
-	"template/route"
 )
 
 func main() {

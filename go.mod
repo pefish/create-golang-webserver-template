@@ -1,4 +1,4 @@
-module template
+module _template_
 
 require (
 	github.com/pefish/go-application v0.1.0
