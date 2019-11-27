@@ -21,17 +21,3 @@ func (this *LoginControllerClass) Login(apiSession *api_session.ApiSessionClass)
 
 	return params
 }
-
-
-func (this *LoginControllerClass) LoginGet(apiSession *api_session.ApiSessionClass) interface{} {
-	apiSession.Ctx.Header("Content-Type", "text/html; charset=utf-8")
-	str := `
-	<html><title>title</title>
-		<body>
-			<h1 style="color: red;">测试</h1>
-		</body>
-	</html>
-`
-	apiSession.Ctx.Write([]byte(str))
-	return nil
-}
