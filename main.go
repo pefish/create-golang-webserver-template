@@ -44,7 +44,7 @@ func main() {
 
 	service.Service.SetHost(go_config.Config.GetString(`host`))
 	service.Service.SetPort(go_config.Config.GetUint64(`port`))
-	service.Service.SetPath(`/api/oauth`)
+	service.Service.SetPath(`/api`)
 	api_strategy.ParamValidateStrategy.SetErrorCode(constant.PARAM_ERROR)
 
 	service.Service.SetRoutes(route.LoginRoute)
