@@ -30,7 +30,7 @@ func main() {
 		SecretEnvName: `GO_SECRET`,
 	})
 
-	service.Service.SetName(`模版示例`)
+	service.Service.SetName(`_template_`)
 	// 处理日志
 	env := go_config.Config.GetString(`env`)
 	go_application.Application.Debug = env == `local` || env == `dev`
