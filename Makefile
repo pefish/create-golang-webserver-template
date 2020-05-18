@@ -1,11 +1,17 @@
 
-DEFAULT: all
+DEFAULT: build-cur
 
-all:
-	rm -rf ./build/
-	make build_linux
+GORUN = env GO111MODULE=on go run
 
-build_linux:
-	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -installsuffix cgo -a -tags netgo -ldflags '-w -extldflags "-static"' -o build/main ./bin/main/
-	@echo "Done building."
 
+build-cur:
+	$(GORUN) internal/build-bin/build_bin.go build-cur
+
+build-cur-pack:
+	$(GORUN) internal/build-bin/build_bin.go build-cur-pack
+
+build-all:
+	$(GORUN) internal/build-bin/build_bin.go build-all
+
+build-all-pack:
+	$(GORUN) internal/build-bin/build_bin.go build-all-pack
