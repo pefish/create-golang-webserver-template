@@ -128,6 +128,8 @@ github.com/pefish/go-string v0.1.0 h1:44fqR5C5nx2c+mQC9k/k+bRMUuU829T8PswFrcDKc/
 github.com/pefish/go-string v0.1.0/go.mod h1:pCtpTZOvsAsTZNGByIevlSW85+Qv8DjTXljwDpEGYvs=
 github.com/pefish/go-task-driver v0.0.4 h1:SZzi2Rp7xHHjzWSQfBl1e3Ybofj5Gu5rCwifmmNWOdE=
 github.com/pefish/go-task-driver v0.0.4/go.mod h1:302EbaE4OoKOUr5MSueCJPERJ+eT7ex+AUYeiPJZuCA=
+github.com/pefish/go-task-driver v0.1.0 h1:CpzHRkoS7CEV4iKbb1JPSOcZft42Z/OTFcvZgaL/gIE=
+github.com/pefish/go-task-driver v0.1.0/go.mod h1:302EbaE4OoKOUr5MSueCJPERJ+eT7ex+AUYeiPJZuCA=
 github.com/pefish/yaml v0.0.0-20181228075832-84d204bc9b71/go.mod h1:Kq1PFcvI1C/2CH5/EHYJ3GSyKCcsvkEwxDDoGwRsywg=
 github.com/pkg/errors v0.8.1 h1:iURUrRGxPUNPdy5/HRSm+Yj6okJ6UtLINN0Q9M4+h3I=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=

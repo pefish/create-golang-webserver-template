@@ -44,7 +44,7 @@ func main() {
 
 	taskDriver := task_driver.NewTaskDriver()
 	taskDriver.SetLogger(go_logger.Logger)
-	taskDriver.Register(service.Service.GetName(), service.Service)
+	taskDriver.Register(service.Service)
 
 	taskDriver.RunWait()
 }
