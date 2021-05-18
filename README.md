@@ -7,7 +7,7 @@ XXX
 ## Quick start
 
 ```shell script
-GO_CONFIG=`pwd`/config/local.yaml GO_SECRET=`pwd`/secret/local.yaml go run ./bin/main/
+GO_CONFIG=`pwd`/config/local.yaml GO_SECRET=`pwd`/secret/local.yaml go run ./cmd/template/
 ```
 
 ## Document

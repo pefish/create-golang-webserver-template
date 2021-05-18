@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  create:
+    tags:
+      - 'v*.*.*'
+
+env:
+  USERNAME: pefish
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: checkout codes
+        uses: actions/checkout@master
+      - name: Set env
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+        run: echo ::set-env name=RELEASE_VERSION::${GITHUB_REF:10}
+      - name: docker login
+        run: |
+          docker login -u "${{env.USERNAME}}" -p "${{ secrets.DOCKER_PASSWORD }}"
+      - name: docker build
+        run: |
+          docker build -t ${{env.USERNAME}}/template:${{env.RELEASE_VERSION}} .
+      - name: docker push
+        run: |
+          docker push ${{env.USERNAME}}/template:${{env.RELEASE_VERSION}}
+#      - name: deploy k8s
+#        uses: actions-hub/kubectl@v1.1.0
+#        env:
+#          KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
+#          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+#        with:
+#          args: -n default set image deployment/template template=${{env.USERNAME}}/template:${{env.RELEASE_VERSION}}
+#
+
+# 仓库中添加 DOCKER_PASSWORD 的 actions secret
