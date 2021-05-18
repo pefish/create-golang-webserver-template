@@ -3,6 +3,7 @@ package command
 import (
 	"_template_/pkg/constant"
 	"_template_/pkg/route"
+	"_template_/version"
 	"flag"
 	"github.com/pefish/go-commander"
 	go_config "github.com/pefish/go-config"
@@ -30,7 +31,7 @@ func (dc *DefaultCommand) OnExited(data *commander.StartData) error {
 }
 
 func (dc *DefaultCommand) Start(data *commander.StartData) error {
-	service.Service.SetName(`_template_`)
+	service.Service.SetName(version.AppName)
 	// 处理日志
 	logger.LoggerDriverInstance.Register(go_logger.Logger)
 

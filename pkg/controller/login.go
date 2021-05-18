@@ -14,7 +14,7 @@ var LoginController = LoginControllerClass{}
 type LoginParam struct {
 	Username string `json:"username" validate:"required" desc:"用户名"`
 }
-func (this *LoginControllerClass) Login(apiSession _type.IApiSession) (interface{}, *go_error.ErrorInfo) {
+func (lc *LoginControllerClass) Login(apiSession _type.IApiSession) (interface{}, *go_error.ErrorInfo) {
 	params := LoginParam{}
 	apiSession.ScanParams(&params)
 
