@@ -15,7 +15,6 @@ import (
 )
 
 type DefaultCommand struct {
-
 }
 
 func NewDefaultCommand() *DefaultCommand {
@@ -55,7 +54,7 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	taskDriver.SetLogger(go_logger.Logger)
 	taskDriver.Register(service.Service)
 
-	taskDriver.RunWait(data.ExitCancelCtx.Done())
+	taskDriver.RunWait(data.ExitCancelCtx)
 
 	return nil
 }
