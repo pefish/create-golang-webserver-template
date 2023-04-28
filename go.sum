@@ -27,8 +27,12 @@ github.com/pefish/go-application v0.1.4 h1:ykYrftZy7tuFjHRqomDIHwdoXeEoYW4KRtHKn
 github.com/pefish/go-application v0.1.4/go.mod h1:FJ0y7LQoSxI6tBPOmRWmzLWE6bTVNV/WSSSWWOtDOfw=
 github.com/pefish/go-commander v0.4.8 h1:29bEFFlegBRIKpspgRnkgA1xKtTdoLSfqQLGkZ61gac=
 github.com/pefish/go-commander v0.4.8/go.mod h1:pS52fHSfwK7KxjfRbiTNwhdyznisP1QAtDNL/b+/4io=
+github.com/pefish/go-commander v0.4.10 h1:fjuGu3JxX6R9yF1xTOEhWgEkI4Q1zKjqcIOQd03LKdQ=
+github.com/pefish/go-commander v0.4.10/go.mod h1:K8ZvV8J2LdNKW2N78y2Ud6K9hORSenoAS8UeBsxSQLI=
 github.com/pefish/go-config v0.2.2 h1:4WTcsE0XzXMLfHZ2a0DT2x1yQQds+q0eDFJO3SrUCFI=
 github.com/pefish/go-config v0.2.2/go.mod h1:HrlPD1p347MMdcXOOCqJLwkq9gD1d9YIk+QCxeJaV2g=
+github.com/pefish/go-config v0.2.3 h1:Wi5rO6TFIrbeSVZ8Jle5Lkkn38/K0t0cvbabsZFfBHs=
+github.com/pefish/go-config v0.2.3/go.mod h1:HrlPD1p347MMdcXOOCqJLwkq9gD1d9YIk+QCxeJaV2g=
 github.com/pefish/go-core v1.2.5 h1:b/PueB1yb7XaFzmTK8h/EDNtIZlqReUwFNi87bhEnmY=
 github.com/pefish/go-core v1.2.5/go.mod h1:tH87YzbHRvcUz/5wna1j8bdMEY64DVsVOdvoyjEqF8s=
 github.com/pefish/go-core-type v0.0.6 h1:bW86E5nne/9EjED5dp9YxO5tcLU6W4d6jyypsSyLUI4=
@@ -45,6 +49,8 @@ github.com/pefish/go-json v0.1.7/go.mod h1:z478hbwAD/l3Gxs8IGByt2HU6K8A+jRy8IJ5h
 github.com/pefish/go-logger v0.4.14/go.mod h1:N2S6ZFg70PyjD2piBtGCVCPH4qftR+aCCpN0ZW/arfc=
 github.com/pefish/go-logger v0.4.15 h1:h6MIeV9SfmJtdiWyjo3tR05dber1Hy7ymli02wcaO/E=
 github.com/pefish/go-logger v0.4.15/go.mod h1:N2S6ZFg70PyjD2piBtGCVCPH4qftR+aCCpN0ZW/arfc=
+github.com/pefish/go-logger v0.4.16 h1:PpqYr4xGO6nmQQsNVo2zpnvfIvzhPOyrFjMfQFUWnoo=
+github.com/pefish/go-logger v0.4.16/go.mod h1:IN1qdbxaVfsT518o9lsj8YY0bCi6E8kakuiVzG6pICA=
 github.com/pefish/go-reflect v0.2.0/go.mod h1:KTxD5dhPvgUFiL+v2cxvYH/u4qEf7MPI+RouiiMNnRk=
 github.com/pefish/go-reflect v0.2.1/go.mod h1:J1PmxXVMl+IqyzuL1OndaKqZjkvfKLaZA9LpUCUB99c=
 github.com/pefish/go-reflect v0.2.2 h1:rNYU5mMIouRaZyAjDt2/rooNm0zx2IaRBa344Bq1s9o=
