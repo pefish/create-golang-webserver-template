@@ -39,12 +39,13 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 		return err
 	}
 
-	//mysqlConfig, err := go_config.ConfigManagerInstance.GetMap(`mysql`)
-	//if err != nil {
-	//	return err
-	//}
 	//go_mysql.MysqlInstance.SetLogger(go_logger.Logger)
-	//go_mysql.MysqlInstance.MustConnectWithMap(mysqlConfig)
+	//go_mysql.MysqlInstance.MustConnectWithConfiguration(go_mysql.Configuration{
+	//	Host:            global.GlobalConfig.Db.Host,
+	//	Username:        global.GlobalConfig.Db.User,
+	//	Password:        global.GlobalConfig.Db.Pass,
+	//	Database:        global.GlobalConfig.Db.Db,
+	//})
 	//defer go_mysql.MysqlInstance.Close()
 
 	service.Service.SetHost(global.GlobalConfig.Host)
