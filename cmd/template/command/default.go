@@ -32,10 +32,13 @@ func (dc *DefaultCommand) OnExited(data *commander.StartData) error {
 
 func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	service.Service.SetName(version.AppName)
-	// 处理日志
 	logger.LoggerDriverInstance.Register(go_logger.Logger)
 
-	// 初始化数据库连接
+	err := go_config.ConfigManagerInstance.Unmarshal(&global.GlobalConfig)
+	if err != nil {
+		return err
+	}
+
 	//mysqlConfig, err := go_config.ConfigManagerInstance.GetMap(`mysql`)
 	//if err != nil {
 	//	return err
@@ -43,8 +46,6 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	//go_mysql.MysqlInstance.SetLogger(go_logger.Logger)
 	//go_mysql.MysqlInstance.MustConnectWithMap(mysqlConfig)
 	//defer go_mysql.MysqlInstance.Close()
-
-	go_config.ConfigManagerInstance.Unmarshal(&global.GlobalConfig)
 
 	service.Service.SetHost(global.GlobalConfig.Host)
 	service.Service.SetPort(global.GlobalConfig.Port)
