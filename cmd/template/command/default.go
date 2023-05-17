@@ -2,6 +2,7 @@ package command
 
 import (
 	"_template_/pkg/constant"
+	"_template_/pkg/global"
 	"_template_/pkg/route"
 	"_template_/version"
 	"flag"
@@ -43,8 +44,10 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	//go_mysql.MysqlInstance.MustConnectWithMap(mysqlConfig)
 	//defer go_mysql.MysqlInstance.Close()
 
-	service.Service.SetHost(go_config.ConfigManagerInstance.MustGetString(`host`))
-	service.Service.SetPort(go_config.ConfigManagerInstance.MustGetUint64Default(`port`, 8000))
+	go_config.ConfigManagerInstance.Unmarshal(&global.GlobalConfig)
+
+	service.Service.SetHost(global.GlobalConfig.Host)
+	service.Service.SetPort(global.GlobalConfig.Port)
 	service.Service.SetPath(`/api`)
 	global_api_strategy.ParamValidateStrategyInstance.SetErrorCode(constant.PARAM_ERROR)
 
