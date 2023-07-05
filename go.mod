@@ -8,6 +8,7 @@ require (
 	github.com/pefish/go-core v1.2.5
 	github.com/pefish/go-core-type v0.0.6
 	github.com/pefish/go-error v1.0.4
+	github.com/pefish/go-http v0.5.2
 	github.com/pefish/go-logger v0.4.16
 	github.com/pefish/go-task-driver v0.1.8
 )
@@ -17,6 +18,7 @@ require (
 	github.com/go-playground/locales v0.13.0 // indirect
 	github.com/go-playground/universal-translator v0.17.0 // indirect
 	github.com/go-playground/validator v9.24.0+incompatible // indirect
+	github.com/google/uuid v1.1.2 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/leodido/go-urn v1.2.0 // indirect
 	github.com/mitchellh/mapstructure v1.1.2 // indirect
@@ -40,4 +42,5 @@ require (
 	gopkg.in/yaml.v2 v2.2.2 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	honnef.co/go/tools v0.0.1-2020.1.4 // indirect
+	moul.io/http2curl v1.0.0 // indirect
 )

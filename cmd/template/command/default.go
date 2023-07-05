@@ -53,7 +53,7 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	service.Service.SetPath(`/api`)
 	global_api_strategy.ParamValidateStrategyInstance.SetErrorCode(constant.PARAM_ERROR)
 
-	service.Service.SetRoutes(route.LoginRoute)
+	service.Service.SetRoutes(route.UserRoute)
 
 	taskDriver := task_driver.NewTaskDriver()
 	taskDriver.SetLogger(go_logger.Logger)

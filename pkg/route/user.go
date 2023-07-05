@@ -6,14 +6,15 @@ import (
 	"github.com/pefish/go-http/gorequest"
 )
 
-var LoginRoute = []*api.Api{
+var UserRoute = []*api.Api{
 	{
 		Description: "登录",
 		Path:        "/v1/login",
 		Method:      gorequest.POST,
-		Params: controller.LoginParam{
+		Params: controller.LoginParams{
 			Username: `test`,
+			Password: `test`,
 		},
-		Controller: controller.LoginController.Login,
+		Controller: controller.UserController.Login,
 	},
 }
