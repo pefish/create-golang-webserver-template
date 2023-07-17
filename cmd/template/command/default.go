@@ -56,7 +56,6 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	service.Service.SetRoutes(route.UserRoute)
 
 	taskDriver := task_driver.NewTaskDriver()
-	taskDriver.SetLogger(go_logger.Logger)
 	taskDriver.Register(service.Service)
 
 	taskDriver.RunWait(data.ExitCancelCtx)

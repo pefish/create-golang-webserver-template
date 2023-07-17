@@ -3,14 +3,14 @@ module _template_
 go 1.20
 
 require (
-	github.com/pefish/go-commander v0.4.10
-	github.com/pefish/go-config v0.2.3
-	github.com/pefish/go-core v1.2.5
-	github.com/pefish/go-core-type v0.0.6
-	github.com/pefish/go-error v1.0.4
-	github.com/pefish/go-http v0.5.2
+	github.com/pefish/go-commander v0.4.11
+	github.com/pefish/go-config v0.2.5
+	github.com/pefish/go-core v1.2.8
+	github.com/pefish/go-core-type v0.0.7
+	github.com/pefish/go-error v1.0.7
+	github.com/pefish/go-http v0.5.12
 	github.com/pefish/go-logger v0.4.16
-	github.com/pefish/go-task-driver v0.1.8
+	github.com/pefish/go-task-driver v0.1.9
 )
 
 require (
@@ -21,7 +21,7 @@ require (
 	github.com/google/uuid v1.1.2 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/leodido/go-urn v1.2.0 // indirect
-	github.com/mitchellh/mapstructure v1.1.2 // indirect
+	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pefish/go-application v0.1.4 // indirect
 	github.com/pefish/go-decimal v0.2.2 // indirect
 	github.com/pefish/go-desensitize v0.0.6 // indirect
