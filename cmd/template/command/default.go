@@ -27,10 +27,11 @@ func (dc *DefaultCommand) DecorateFlagSet(flagSet *flag.FlagSet) error {
 }
 
 func (dc *DefaultCommand) OnExited(data *commander.StartData) error {
+	//go_mysql.MysqlInstance.Close()
 	return nil
 }
 
-func (dc *DefaultCommand) Start(data *commander.StartData) error {
+func (dc *DefaultCommand) Init(data *commander.StartData) error {
 	service.Service.SetName(version.AppName)
 	logger.LoggerDriverInstance.Register(go_logger.Logger)
 
@@ -46,7 +47,6 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	//	Password:        global.GlobalConfig.Db.Pass,
 	//	Database:        global.GlobalConfig.Db.Db,
 	//})
-	//defer go_mysql.MysqlInstance.Close()
 
 	service.Service.SetHost(global.GlobalConfig.Host)
 	service.Service.SetPort(global.GlobalConfig.Port)
@@ -54,6 +54,11 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	global_api_strategy.ParamValidateStrategyInstance.SetErrorCode(constant.PARAM_ERROR)
 
 	service.Service.SetRoutes(route.UserRoute)
+
+	return nil
+}
+
+func (dc *DefaultCommand) Start(data *commander.StartData) error {
 
 	taskDriver := task_driver.NewTaskDriver()
 	taskDriver.Register(service.Service)

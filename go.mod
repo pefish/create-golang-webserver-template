@@ -3,10 +3,10 @@ module _template_
 go 1.20
 
 require (
-	github.com/pefish/go-commander v0.4.11
+	github.com/pefish/go-commander v0.5.1
 	github.com/pefish/go-config v0.2.5
-	github.com/pefish/go-core v1.2.8
-	github.com/pefish/go-core-type v0.0.7
+	github.com/pefish/go-core v1.3.1
+	github.com/pefish/go-core-type v0.1.0
 	github.com/pefish/go-error v1.0.7
 	github.com/pefish/go-http v0.5.12
 	github.com/pefish/go-logger v0.4.16
