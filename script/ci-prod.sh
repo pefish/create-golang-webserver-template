@@ -3,9 +3,9 @@
 set -euxo pipefail
 
 projectName="test-project"
-srcPath=~/src/test/test-project/
-configPath=/home/ubuntu/data/test/test-project-prod
 port="8000"
+srcPath=`pwd`
+configPath=$CONFIG_PATH
 
 cd ${srcPath}
 
