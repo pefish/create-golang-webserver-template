@@ -17,9 +17,9 @@ if [[ "`sudo docker images -q ${imageName} 2> /dev/null`" == "" ]]; then
   sudo docker build -t ${imageName} .
 fi
 
-sudo docker stop ${projectName}-dev && sudo docker rm ${projectName}-dev
+sudo docker stop ${projectName}-test && sudo docker rm ${projectName}-test
 
-sudo docker run --name ${projectName}-dev -d -v ${configPath}:/app/config -p ${port}:${port} ${imageName}
+sudo docker run --name ${projectName}-test -d -v ${configPath}:/app/config -p ${port}:${port} ${imageName}
 
 
-# CONFIG_PATH=** ./script/ci-dev.sh
+# CONFIG_PATH=** ./script/ci-test.sh
