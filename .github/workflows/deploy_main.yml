@@ -18,5 +18,8 @@ jobs:
           username: ubuntu
           key: ${{ secrets.KEY }}
           port: 22
-          script: ~/ci/ci-prod.sh
+          script: |
+            cd {src}
+            git checkout main
+            ./script/ci-prod.sh
 
