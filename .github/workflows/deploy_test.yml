@@ -20,6 +20,6 @@ jobs:
           port: 22
           script: |
             cd {src}
-            git checkout test
+            git checkout test && git pull
             ./script/ci-test.sh
 
