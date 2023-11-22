@@ -18,9 +18,9 @@ cat pkg/controller/user.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf
 
 cat pkg/route/user.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf pkg/route/user.go && mv temp pkg/route/user.go
 
-cat script/ci-prod.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf script/ci-prod.go && mv temp script/ci-prod.go
+cat script/ci-prod.sh | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf script/ci-prod.sh && mv temp script/ci-prod.sh
 
-cat script/ci-test.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf script/ci-test.go && mv temp script/ci-test.go
+cat script/ci-test.sh | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf script/ci-test.sh && mv temp script/ci-test.sh
 
 cp config/sample.yaml config/local.yaml
 
