@@ -3,18 +3,19 @@ module _template_
 go 1.20
 
 require (
-	github.com/pefish/go-commander v0.5.1
-	github.com/pefish/go-config v0.2.5
-	github.com/pefish/go-core v1.3.2
+	github.com/pefish/go-commander v0.5.2
+	github.com/pefish/go-config v0.3.0
+	github.com/pefish/go-core v1.3.3
 	github.com/pefish/go-core-type v0.1.0
 	github.com/pefish/go-error v1.0.7
-	github.com/pefish/go-http v0.5.12
-	github.com/pefish/go-logger v0.4.16
-	github.com/pefish/go-task-driver v0.1.9
+	github.com/pefish/go-http v0.5.14
+	github.com/pefish/go-logger v0.5.3
+	github.com/pefish/go-task-driver v0.2.1
 )
 
 require (
 	github.com/BurntSushi/toml v0.3.1 // indirect
+	github.com/fatih/structs v1.1.0 // indirect
 	github.com/go-playground/locales v0.13.0 // indirect
 	github.com/go-playground/universal-translator v0.17.0 // indirect
 	github.com/go-playground/validator v9.24.0+incompatible // indirect
@@ -23,11 +24,12 @@ require (
 	github.com/leodido/go-urn v1.2.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pefish/go-application v0.1.4 // indirect
-	github.com/pefish/go-decimal v0.2.2 // indirect
+	github.com/pefish/go-decimal v0.3.3 // indirect
 	github.com/pefish/go-desensitize v0.0.6 // indirect
+	github.com/pefish/go-format v0.2.6 // indirect
 	github.com/pefish/go-json v0.1.7 // indirect
 	github.com/pefish/go-reflect v0.2.2 // indirect
-	github.com/pefish/go-string v0.1.0 // indirect
+	github.com/pefish/go-string v0.1.1 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	go.uber.org/atomic v1.5.0 // indirect
 	go.uber.org/multierr v1.3.0 // indirect
