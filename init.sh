@@ -8,8 +8,6 @@ cat README_zh-cn.md | sed "s@XXX@${PROJECT_NAME}@g" > temp && rm -rf README_zh-c
 
 cat Dockerfile | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf Dockerfile && mv temp Dockerfile
 
-mv ./cmd/template ./cmd/"${PROJECT_NAME}"
-
 cat version/version.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf version/version.go && mv temp version/version.go
 
 cat cmd/template/main.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf cmd/template/main.go && mv temp cmd/template/main.go
@@ -25,3 +23,5 @@ cat script/ci-prod.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf scri
 cat script/ci-test.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf script/ci-test.go && mv temp script/ci-test.go
 
 cp config/sample.yaml config/local.yaml
+
+mv ./cmd/template ./cmd/"${PROJECT_NAME}"
