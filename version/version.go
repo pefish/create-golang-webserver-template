@@ -1,6 +1,6 @@
 package version
 
 const (
-	AppName = "_template_"
+	AppName = "template"
 	Version = "v0.0.1"
 )

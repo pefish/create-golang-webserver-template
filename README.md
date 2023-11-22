@@ -7,12 +7,12 @@ XXX
 ## Quick start
 
 ```shell script
-GO_CONFIG=`pwd`/config/local.yaml go run ./cmd/template/
+GO_CONFIG=`pwd`/config/local.yaml go run ./cmd/XXX/
 ```
 
 ## Document
 
-[Doc](https://godoc.org/github.com/pefish/XXX)
+[doc](https://godoc.org/github.com/pefish/XXX)
 
 ## Security Vulnerabilities
 

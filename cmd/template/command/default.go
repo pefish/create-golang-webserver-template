@@ -1,10 +1,6 @@
 package command
 
 import (
-	"_template_/pkg/constant"
-	"_template_/pkg/global"
-	"_template_/pkg/route"
-	"_template_/version"
 	"flag"
 	"github.com/pefish/go-commander"
 	go_config "github.com/pefish/go-config"
@@ -13,6 +9,10 @@ import (
 	"github.com/pefish/go-core/service"
 	go_logger "github.com/pefish/go-logger"
 	task_driver "github.com/pefish/go-task-driver"
+	"github.com/pefish/template/pkg/constant"
+	"github.com/pefish/template/pkg/global"
+	"github.com/pefish/template/pkg/route"
+	"github.com/pefish/template/version"
 )
 
 type DefaultCommand struct {

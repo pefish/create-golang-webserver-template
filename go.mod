@@ -1,4 +1,4 @@
-module _template_
+module github.com/pefish/template
 
 go 1.20
 
