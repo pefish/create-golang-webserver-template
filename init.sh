@@ -16,6 +16,8 @@ cat version/version.go | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf version
 
 cat cmd/app-name/main.go | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf cmd/app-name/main.go && mv temp cmd/app-name/main.go
 
+cat cmd/app-name/main.go | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf cmd/app-name/main.go && mv temp cmd/app-name/main.go
+
 cat cmd/app-name/command/default.go | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf cmd/app-name/command/default.go && mv temp cmd/app-name/command/default.go
 
 cat pkg/controller/user.go | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf pkg/controller/user.go && mv temp pkg/controller/user.go
