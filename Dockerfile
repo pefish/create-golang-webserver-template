@@ -10,6 +10,3 @@ COPY --from=builder /app/build/bin/linux/ /app/bin/
 ENV GO_CONFIG /app/config/config.yaml
 ENV GO_SECRET /app/secret/config.yaml
 CMD ["/app/bin/app-name"]
-
-# docker build -t app-name:abc .
-# docker run --name app-name-dev -d -v `pwd`:/app/config -p 8000:8000 app-name:abc
