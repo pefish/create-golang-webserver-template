@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/pefish/go-commander"
 	"github.com/pefish/go-logger"
-	"github.com/pefish/template/cmd/template/command"
-	"github.com/pefish/template/version"
+	"package-name/cmd/app-name/command"
+	"package-name/version"
 )
 
 func main() {

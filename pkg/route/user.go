@@ -3,7 +3,7 @@ package route
 import (
 	"github.com/pefish/go-core/api"
 	"github.com/pefish/go-http/gorequest"
-	"github.com/pefish/template/pkg/controller"
+	"package-name/pkg/controller"
 )
 
 var UserRoute = []*api.Api{

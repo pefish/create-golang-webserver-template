@@ -1,18 +1,18 @@
-# XXX
+# app-name
 
-[![view examples](https://img.shields.io/badge/learn%20by-examples-0C8EC5.svg?style=for-the-badge&logo=go)](https://github.com/pefish/XXX)
+[![view examples](https://img.shields.io/badge/learn%20by-examples-0C8EC5.svg?style=for-the-badge&logo=go)](https://package-name)
 
-XXX
+app-name
 
 ## Quick start
 
 ```shell script
-GO_CONFIG=`pwd`/config/local.yaml go run ./cmd/XXX/
+GO_CONFIG=`pwd`/config/local.yaml go run ./cmd/app-name/
 ```
 
 ## Document
 
-[doc](https://godoc.org/github.com/pefish/XXX)
+[doc](https://godoc.org/package-name)
 
 ## Security Vulnerabilities
 
