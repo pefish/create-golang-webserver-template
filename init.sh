@@ -24,7 +24,19 @@ cat pkg/route/user.go | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf 
 
 cat script/ci-prod.sh | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf script/ci-prod.sh && mv temp script/ci-prod.sh
 
+cat script/ci-prod.sh | sed "s@username@${USERNAME}@g" > temp && rm -rf script/ci-prod.sh && mv temp script/ci-prod.sh
+
 cat script/ci-test.sh | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf script/ci-test.sh && mv temp script/ci-test.sh
+
+cat script/ci-test.sh | sed "s@username@${USERNAME}@g" > temp && rm -rf script/ci-test.sh && mv temp script/ci-test.sh
+
+cat .github/workflows/deploy_main.yml | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf .github/workflows/deploy_main.yml && mv temp .github/workflows/deploy_main.yml
+
+cat .github/workflows/deploy_main.yml | sed "s@username@${USERNAME}@g" > temp && rm -rf .github/workflows/deploy_main.yml && mv temp .github/workflows/deploy_main.yml
+
+cat .github/workflows/deploy_test.yml | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf .github/workflows/deploy_test.yml && mv temp .github/workflows/deploy_test.yml
+
+cat .github/workflows/deploy_test.yml | sed "s@username@${USERNAME}@g" > temp && rm -rf .github/workflows/deploy_test.yml && mv temp .github/workflows/deploy_test.yml
 
 cp config/sample.yaml config/local.yaml
 
