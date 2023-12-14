@@ -10,12 +10,12 @@ build-cur:
 	$(GOPATH)/bin/go-build-tool
 
 install: build-cur
-	sudo install -C ./build/bin/linux/create_golang_app_template /usr/local/bin/create_golang_app_template
+	sudo install -C ./build/bin/linux/app-name /usr/local/bin/app-name
 
 install-service: install
 	sudo mkdir -p /etc/systemd/system
-	sudo install -C -m 0644 ./script/create_golang_app_template.service /etc/systemd/system/create_golang_app_template.service
+	sudo install -C -m 0644 ./script/app-name.service /etc/systemd/system/app-name.service
 	sudo systemctl daemon-reload
 	@echo
-	@echo "create_golang_app_template service installed."
+	@echo "app-name service installed."
 

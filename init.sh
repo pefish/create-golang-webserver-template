@@ -40,6 +40,8 @@ cat .github/workflows/deploy_test.yml | sed "s@app-name@${APP_NAME}@g" > temp &&
 
 cat .github/workflows/deploy_test.yml | sed "s@username@${USERNAME}@g" > temp && rm -rf .github/workflows/deploy_test.yml && mv temp .github/workflows/deploy_test.yml
 
+cat Makefile | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf Makefile && mv temp Makefile
+
 cp config/sample.yaml config/local.yaml
 
 mv ./cmd/app-name ./cmd/"${APP_NAME}"
