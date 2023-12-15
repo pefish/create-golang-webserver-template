@@ -33,7 +33,7 @@ jobs:
           key: ${{ secrets.KEY }}
           port: 22
           script: |
-            cd ~/src/username/app-name
+            cd ~/src/_username_/_app-name_
             git checkout main && git pull
             ./script/ci-prod.sh
 

@@ -1,4 +1,4 @@
-module package-name
+module _package-name_
 
 go 1.20
 

@@ -10,12 +10,12 @@ build-cur:
 	$(GOPATH)/bin/go-build-tool
 
 install: build-cur
-	sudo install -C ./build/bin/linux/app-name /usr/local/bin/app-name
+	sudo install -C ./build/bin/linux/_app-name_ /usr/local/bin/_app-name_
 
 install-service: install
 	sudo mkdir -p /etc/systemd/system
-	sudo install -C -m 0644 ./script/app-name.service /etc/systemd/system/app-name.service
+	sudo install -C -m 0644 ./script/_app-name_.service /etc/systemd/system/_app-name_.service
 	sudo systemctl daemon-reload
 	@echo
-	@echo "app-name service installed."
+	@echo "_app-name_ service installed."
 

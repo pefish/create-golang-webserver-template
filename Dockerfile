@@ -9,4 +9,4 @@ WORKDIR /app
 COPY --from=builder /app/build/bin/linux/ /app/bin/
 ENV GO_CONFIG /app/config/config.yaml
 ENV GO_SECRET /app/secret/config.yaml
-CMD ["/app/bin/app-name"]
+CMD ["/app/bin/_app-name_"]
