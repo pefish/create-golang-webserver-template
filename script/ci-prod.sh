@@ -4,7 +4,7 @@ set -euxo pipefail
 
 projectName="username-app-name"
 port="8000"
-configPath="~/data/username/app-name-prod"
+configPath="${HOME}/data/username/app-name-prod"
 
 
 git reset --hard && git pull && git checkout test && git pull
