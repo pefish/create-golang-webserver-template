@@ -50,8 +50,8 @@ func (dc *DefaultCommand) Init(data *commander.StartData) error {
 	//	Database:        global.GlobalConfig.Db.Db,
 	//})
 
-	service.Service.SetHost(global.GlobalConfig.Host)
-	service.Service.SetPort(global.GlobalConfig.Port)
+	service.Service.SetHost("0.0.0.0")
+	service.Service.SetPort(global.GlobalConfig.ServerPort)
 	service.Service.SetPath(`/api`)
 	global_api_strategy.ParamValidateStrategyInstance.SetErrorCode(constant.PARAM_ERROR)
 
