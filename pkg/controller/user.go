@@ -16,7 +16,7 @@ type LoginParams struct {
 }
 
 func (lc *UserControllerType) Login(apiSession _type.IApiSession) (interface{}, *go_error.ErrorInfo) {
-	params := LoginParams{}
+	var params LoginParams
 	apiSession.MustScanParams(&params)
 
 	return params, nil
