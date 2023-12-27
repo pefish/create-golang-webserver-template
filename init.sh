@@ -45,3 +45,5 @@ cat Makefile | sed "s@_app-name_@${APP_NAME}@g" > temp && rm -rf Makefile && mv 
 cp config/sample.yaml config/local.yaml
 
 mv ./cmd/_app-name_ ./cmd/"${APP_NAME}"
+
+chmod +x ./script/ci-prod.sh ./script/ci-test.sh
