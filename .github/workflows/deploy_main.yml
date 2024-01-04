@@ -13,18 +13,6 @@ jobs:
     steps:
       - name: Check out
         uses: actions/checkout@v3
-
-      - name: Set up Go
-        uses: actions/setup-go@v4
-        with:
-          go-version: '1.20'
-
-      - name: Build
-        run: go build -v ./...
-
-      - name: Test
-        run: go test -v ./...
-
       - name: executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@v0.1.8
         with:
@@ -35,5 +23,6 @@ jobs:
           script: |
             cd ~/src/_username_/_app-name_
             git checkout main && git pull
+            go test -v ./...
             ./script/ci-prod.sh
 
