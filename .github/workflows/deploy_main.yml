@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - name: Check out
-        uses: actions/checkout@v3
       - name: executing remote ssh commands using ssh key
         uses: appleboy/ssh-action@v0.1.8
         with:
