@@ -1,7 +1,8 @@
 package global
 
 type Config struct {
-	ServerPort uint64 `json:"serverPort"`
+	ServerHost string `json:"server-host"`
+	ServerPort uint64 `json:"server-port"`
 	//Db   struct {
 	//	Db       string `json:"db"`
 	//	Host     string `json:"host"`

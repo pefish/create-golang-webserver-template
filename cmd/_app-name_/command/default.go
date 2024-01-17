@@ -23,8 +23,8 @@ func NewDefaultCommand() *DefaultCommand {
 }
 
 func (dc *DefaultCommand) DecorateFlagSet(flagSet *flag.FlagSet) error {
-	flagSet.String("host", "127.0.0.1", "The host of web server.")
-	flagSet.Int("port", 8000, "The port of web server.")
+	flagSet.String("server-host", "127.0.0.1", "The host of web server.")
+	flagSet.Int("server-port", 8000, "The port of web server.")
 	return nil
 }
 
@@ -50,7 +50,7 @@ func (dc *DefaultCommand) Init(data *commander.StartData) error {
 	//	Database:        global.GlobalConfig.Db.Db,
 	//})
 
-	service.Service.SetHost("0.0.0.0")
+	service.Service.SetHost(global.GlobalConfig.ServerHost)
 	service.Service.SetPort(global.GlobalConfig.ServerPort)
 	service.Service.SetPath(`/api`)
 	global_api_strategy.ParamValidateStrategyInstance.SetErrorCode(constant.PARAM_ERROR)
