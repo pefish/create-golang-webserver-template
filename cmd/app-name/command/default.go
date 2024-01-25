@@ -1,10 +1,6 @@
 package command
 
 import (
-	"_package-name_/pkg/constant"
-	"_package-name_/pkg/global"
-	"_package-name_/pkg/route"
-	"_package-name_/version"
 	"flag"
 	"github.com/pefish/go-commander"
 	go_config "github.com/pefish/go-config"
@@ -13,6 +9,10 @@ import (
 	"github.com/pefish/go-core/service"
 	go_logger "github.com/pefish/go-logger"
 	task_driver "github.com/pefish/go-task-driver"
+	"package-name/pkg/constant"
+	"package-name/pkg/global"
+	"package-name/pkg/route"
+	"package-name/version"
 )
 
 type DefaultCommand struct {
@@ -28,12 +28,12 @@ func (dc *DefaultCommand) DecorateFlagSet(flagSet *flag.FlagSet) error {
 	return nil
 }
 
-func (dc *DefaultCommand) OnExited(data *commander.StartData) error {
+func (dc *DefaultCommand) OnExited(command *commander.Commander) error {
 	//go_mysql.MysqlInstance.Close()
 	return nil
 }
 
-func (dc *DefaultCommand) Init(data *commander.StartData) error {
+func (dc *DefaultCommand) Init(command *commander.Commander) error {
 	service.Service.SetName(version.AppName)
 	logger.LoggerDriverInstance.Register(go_logger.Logger)
 
@@ -60,12 +60,12 @@ func (dc *DefaultCommand) Init(data *commander.StartData) error {
 	return nil
 }
 
-func (dc *DefaultCommand) Start(data *commander.StartData) error {
+func (dc *DefaultCommand) Start(command *commander.Commander) error {
 
 	taskDriver := task_driver.NewTaskDriver()
 	taskDriver.Register(service.Service)
 
-	taskDriver.RunWait(data.ExitCancelCtx)
+	taskDriver.RunWait(command.Ctx)
 
 	return nil
 }

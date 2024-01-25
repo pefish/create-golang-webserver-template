@@ -1,20 +1,20 @@
-# _app-name_
+# app-name
 
-[![view examples](https://img.shields.io/badge/learn%20by-examples-0C8EC5.svg?style=for-the-badge&logo=go)](https://_package-name_)
+[![view examples](https://img.shields.io/badge/learn%20by-examples-0C8EC5.svg?style=for-the-badge&logo=go)](https://package-name)
 
 Read this in other languages: [English](README.md), [简体中文](README_zh-cn.md)
 
-_app-name_
+app-name
 
 ## 快速开始
 
 ```shell script
-GO_CONFIG=`pwd`/config/local.yaml go run ./cmd/_app-name_/
+GO_CONFIG=`pwd`/config/local.yaml go run ./cmd/app-name/
 ```
 
 ## 文档
 
-[doc](https://godoc.org/_package-name_)
+[doc](https://godoc.org/package-name)
 
 ## 贡献代码（非常欢迎）
 

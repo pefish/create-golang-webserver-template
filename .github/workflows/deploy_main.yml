@@ -11,16 +11,21 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      - name: executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@v0.1.8
+      - name: Deploy
+        uses: fjogeleit/http-request-action@v1
         with:
-          host: ${{ secrets.HOST }}
-          username: ubuntu
-          key: ${{ secrets.KEY }}
-          port: 22
-          script: |
-            cd ~/src/_username_/_app-name_
-            git checkout main && git pull
-            go test -v ./...
-            ./script/ci-prod.sh
-
+          url: 'http://xxx/api/v1/ci-start'
+          method: 'POST'
+          customHeaders: '{"Content-Type": "application/json"}'
+          data: >-
+            {
+              "env": "prod",
+              "project_name": "_username_-app-name",
+              "src_path": "~/src/_username_/app-name",
+              "token": "${{ secrets.TOKEN }}",
+              "port": 8000,
+              "config_path": "~/data/_username_/app-name-prod",
+              "alert_tg_token": "",
+              "alert_tg_group_id": "",
+              "loki_url": ""
+            }
