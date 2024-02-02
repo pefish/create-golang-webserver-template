@@ -3,7 +3,7 @@ module package-name
 go 1.20
 
 require (
-	github.com/pefish/go-commander v0.6.1
+	github.com/pefish/go-commander v0.6.2
 	github.com/pefish/go-config v0.4.0
 	github.com/pefish/go-core v1.4.0
 	github.com/pefish/go-core-type v0.1.0
