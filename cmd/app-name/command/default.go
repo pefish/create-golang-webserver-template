@@ -2,6 +2,11 @@ package command
 
 import (
 	"flag"
+	"package-name/pkg/constant"
+	"package-name/pkg/global"
+	"package-name/pkg/route"
+	"package-name/version"
+
 	"github.com/pefish/go-commander"
 	go_config "github.com/pefish/go-config"
 	"github.com/pefish/go-core/driver/logger"
@@ -9,10 +14,6 @@ import (
 	"github.com/pefish/go-core/service"
 	go_logger "github.com/pefish/go-logger"
 	task_driver "github.com/pefish/go-task-driver"
-	"package-name/pkg/constant"
-	"package-name/pkg/global"
-	"package-name/pkg/route"
-	"package-name/version"
 )
 
 type DefaultCommand struct {
@@ -42,13 +43,16 @@ func (dc *DefaultCommand) Init(command *commander.Commander) error {
 		return err
 	}
 
-	//go_mysql.MysqlInstance.SetLogger(go_logger.Logger)
-	//go_mysql.MysqlInstance.MustConnectWithConfiguration(go_mysql.Configuration{
-	//	Host:            global.GlobalConfig.Db.Host,
-	//	Username:        global.GlobalConfig.Db.User,
-	//	Password:        global.GlobalConfig.Db.Pass,
-	//	Database:        global.GlobalConfig.Db.Db,
-	//})
+	// go_mysql.MysqlInstance.SetLogger(go_logger.Logger)
+	// err = go_mysql.MysqlInstance.ConnectWithConfiguration(go_mysql.Configuration{
+	// 	Host:            global.GlobalConfig.Db.Host,
+	// 	Username:        global.GlobalConfig.Db.User,
+	// 	Password:        global.GlobalConfig.Db.Pass,
+	// 	Database:        global.GlobalConfig.Db.Db,
+	// })
+	// if err != nil {
+	// 	return err
+	// }
 
 	service.Service.SetHost(global.GlobalConfig.ServerHost)
 	service.Service.SetPort(global.GlobalConfig.ServerPort)
