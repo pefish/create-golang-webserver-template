@@ -1,13 +1,14 @@
 package route
 
 import (
+	"package-name/pkg/controller"
+
 	"github.com/pefish/go-core/api"
 	"github.com/pefish/go-http/gorequest"
-	"package-name/pkg/controller"
 )
 
 var UserRoute = []*api.Api{
-	{
+	api.NewApi(&api.NewApiParamsType{
 		Description: "登录",
 		Path:        "/v1/login",
 		Method:      gorequest.POST,
@@ -15,6 +16,6 @@ var UserRoute = []*api.Api{
 			Username: `test`,
 			Password: `test`,
 		},
-		Controller: controller.UserController.Login,
-	},
+		ControllerFunc: controller.UserController.Login,
+	}),
 }
