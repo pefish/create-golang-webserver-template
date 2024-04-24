@@ -4,10 +4,22 @@
 
 app-name
 
+## Install
+
+```
+go install package-name/cmd/app-name@latest
+```
+
 ## Quick start
 
 ```shell script
-GO_CONFIG=`pwd`/config/local.yaml go run ./cmd/app-name/
+app-name --config=/path/to/config
+```
+
+or
+
+```shell script
+GO_CONFIG=/path/to/config app-name
 ```
 
 ## Document

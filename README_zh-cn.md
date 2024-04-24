@@ -6,10 +6,22 @@ Read this in other languages: [English](README.md), [简体中文](README_zh-cn.
 
 app-name
 
+## 安装
+
+```
+go install package-name/cmd/app-name@latest
+```
+
 ## 快速开始
 
 ```shell script
-GO_CONFIG=`pwd`/config/local.yaml go run ./cmd/app-name/
+app-name --config=/path/to/config
+```
+
+或者
+
+```shell script
+GO_CONFIG=/path/to/config app-name
 ```
 
 ## 文档
