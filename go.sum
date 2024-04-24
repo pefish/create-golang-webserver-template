@@ -26,10 +26,10 @@ github.com/pefish/go-commander v0.6.2 h1:m8wVRcEinENGkdLgYR26F8f3ZJJ8GWQcKLv/Klb
 github.com/pefish/go-commander v0.6.2/go.mod h1:ojUHP/D5gluvNmRcmrKuZcs+WvbYZmaJpbvbxzf/Umo=
 github.com/pefish/go-config v0.4.0 h1:kxQ8vU5iLUzd09ALZjViqWhkqBCjTHOU6FR/l6t3lBo=
 github.com/pefish/go-config v0.4.0/go.mod h1:ZyhAhUtRSkFG1DhJ3nFnuzGKr/Is+7pvYHtPKEejTn0=
-github.com/pefish/go-core v1.4.5 h1:BGsQwxXxMvt9HH/foSSTRfNx6slHqlhqbeje+TgWLt4=
-github.com/pefish/go-core v1.4.5/go.mod h1:GYO27vULUyOsW9p8968nrX8Nf3HYYoEG1rkoPhEMR4I=
-github.com/pefish/go-core-type v0.1.3 h1:NFef2oueHMVQD1b2rqbQT+/x2OZDA13MRbvBa92tkFc=
-github.com/pefish/go-core-type v0.1.3/go.mod h1:D0xHk/Rzs/xuyyRDggnl4njgphLFiOjZGoTDmp4oQ9I=
+github.com/pefish/go-core v1.4.6 h1:/YIJ1ZzNY80pSKgwK3AOEDJVDdk0nI2NVZoARA8SjvE=
+github.com/pefish/go-core v1.4.6/go.mod h1:FopXlMHbrJsJS+WPDCzUsT7w9OG31JCK+oLVtpi0090=
+github.com/pefish/go-core-type v0.1.4 h1:q32bLvKtDUhu7W+WRRJmz420hfm8LpS0Ea12fEKz6S8=
+github.com/pefish/go-core-type v0.1.4/go.mod h1:i0JVI3T3BSWXLLCR4JA06YgBbQ35TO5UrMV9hdFiavc=
 github.com/pefish/go-decimal v0.4.0 h1:RAPcIgoJmP1L4n2XnLMuWdOFv3TzP2Rn1UfbbLOk7Dk=
 github.com/pefish/go-decimal v0.4.0/go.mod h1:p9D+rI1i86a7/NP87r3ryqk9Bj30ZWkj9tFXXQx6Kbk=
 github.com/pefish/go-desensitize v0.0.7 h1:7YZMo6nWvb8soIB0HIG5qc0Zy1t9RBjZ6E7XcbzosBE=

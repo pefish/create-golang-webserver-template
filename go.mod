@@ -5,8 +5,8 @@ go 1.20
 require (
 	github.com/pefish/go-commander v0.6.2
 	github.com/pefish/go-config v0.4.0
-	github.com/pefish/go-core v1.4.5
-	github.com/pefish/go-core-type v0.1.3
+	github.com/pefish/go-core v1.4.6
+	github.com/pefish/go-core-type v0.1.4
 	github.com/pefish/go-error v1.0.8
 	github.com/pefish/go-http v0.6.8
 	github.com/pefish/go-logger v0.5.6
