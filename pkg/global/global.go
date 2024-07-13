@@ -1,6 +1,11 @@
 package global
 
+import (
+	"github.com/pefish/go-commander"
+)
+
 type Config struct {
+	commander.BasicConfig
 	ServerHost string `json:"server-host" default:"0.0.0.0" usage:"Server host."`
 	ServerPort int    `json:"server-port" default:"8000" usage:"Server port."`
 	// DbHost     string `json:"db-host" default:"mysql" usage:"Database host."`

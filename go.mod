@@ -3,7 +3,7 @@ module package-name
 go 1.20
 
 require (
-	github.com/pefish/go-commander v0.7.6
+	github.com/pefish/go-commander v0.8.0
 	github.com/pefish/go-core v1.4.7
 	github.com/pefish/go-core-type v0.1.4
 	github.com/pefish/go-error v1.0.8
@@ -31,7 +31,7 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
-	golang.org/x/net v0.26.0 // indirect
+	golang.org/x/net v0.27.0 // indirect
 	golang.org/x/text v0.16.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	moul.io/http2curl v1.0.0 // indirect
