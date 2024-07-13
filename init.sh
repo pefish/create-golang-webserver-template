@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# 设置合适的区域设置
+export LC_ALL=C
+export LANG=C
+
+set -euxo pipefail
+
 cat go.mod | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf go.mod && mv temp go.mod
 
 cat README.md | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf README.md && mv temp README.md
@@ -33,7 +39,5 @@ cat .github/workflows/deploy_test.yml | sed "s@app-name@${APP_NAME}@g" > temp &&
 cat .github/workflows/deploy_test.yml | sed "s@_username_@${USERNAME}@g" > temp && rm -rf .github/workflows/deploy_test.yml && mv temp .github/workflows/deploy_test.yml
 
 cat Makefile | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf Makefile && mv temp Makefile
-
-cp config/sample.yaml config/local.yaml
 
 mv ./cmd/app-name ./cmd/"${APP_NAME}"
