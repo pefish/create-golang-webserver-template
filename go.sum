@@ -22,8 +22,6 @@ github.com/leodido/go-urn v1.4.0/go.mod h1:bvxc+MVxLKB4z00jd1z+Dvzr47oO32F/QSNjS
 github.com/mitchellh/mapstructure v1.1.2/go.mod h1:FVVH3fgwuzCH5S8UJGiWEs2h04kUh9fWfEaFds41c1Y=
 github.com/mitchellh/mapstructure v1.5.0 h1:jeMsZIYE/09sWLaz43PL7Gy6RuMjD2eJVyuac5Z2hdY=
 github.com/mitchellh/mapstructure v1.5.0/go.mod h1:bFUtVrKA4DC2yAKiSyO/QUcy7e+RRV2QTWOzhPopBRo=
-github.com/pefish/go-commander v0.7.9 h1:yn/JXHzegXt7cPMnO2dMMT5xb7V20MTz62Hu6oUItMI=
-github.com/pefish/go-commander v0.7.9/go.mod h1:2owotXfrgU+xudaGDzMGQ+lpKbW9fYF5OH0IqpzWHnE=
 github.com/pefish/go-commander v0.8.0 h1:yB6MWzqQVsMlGJ/r3MfUe5ZZcr7+Vehp1BS6uGPu8QA=
 github.com/pefish/go-commander v0.8.0/go.mod h1:2owotXfrgU+xudaGDzMGQ+lpKbW9fYF5OH0IqpzWHnE=
 github.com/pefish/go-config v0.4.6 h1:lB5h+9vGdN5yuZ1UxNaT+GnkRLuUY36OlUv+uvjcBro=
@@ -55,7 +53,6 @@ github.com/pefish/go-test-assert v0.0.2 h1:AuEJxG99DsFb9+qSUnSEWJDlTn0gf1PmGkKcO
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
-github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/rogpeppe/go-internal v1.12.0 h1:exVL4IDcn6na9z1rAb56Vxr+CgyK3nn3O+epU5NdKM8=
 github.com/smarty/assertions v1.15.1 h1:812oFiXI+G55vxsFf+8bIZ1ux30qtkdqzKbEFwyX3Tk=
 github.com/smartystreets/goconvey v1.8.1 h1:qGjIddxOk4grTu9JPOU31tVfq3cNdBlNa5sSznIX1xY=

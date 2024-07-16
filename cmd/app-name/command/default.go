@@ -55,7 +55,7 @@ func (dc *DefaultCommand) Init(command *commander.Commander) error {
 	service.Service.SetPath(`/api`)
 	global_api_strategy.ParamValidateStrategyInstance.SetErrorCode(constant.PARAM_ERROR)
 
-	service.Service.SetRoutes(route.UserRoute)
+	service.Service.SetRoutes(route.NewUserRoute())
 
 	return nil
 }
