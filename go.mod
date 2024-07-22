@@ -1,11 +1,11 @@
 module package-name
 
-go 1.20
+go 1.21
 
 require (
 	github.com/pefish/go-commander v0.8.1
-	github.com/pefish/go-core v1.4.7
-	github.com/pefish/go-core-type v0.1.4
+	github.com/pefish/go-core v1.4.8
+	github.com/pefish/go-core-type v0.1.5
 	github.com/pefish/go-error v1.0.8
 	github.com/pefish/go-http v0.7.0
 	github.com/pefish/go-logger v0.5.6
