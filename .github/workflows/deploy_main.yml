@@ -20,12 +20,10 @@ jobs:
           data: >-
             {
               "env": "prod",
-              "project_name": "_username_-app-name",
-              "src_path": "~/src/_username_/app-name",
-              "token": "${{ secrets.TOKEN }}",
-              "port": 8000,
-              "config_path": "~/data/_username_/app-name-prod",
+              "repo": "XXX",
+              "fetch_code_key": "~/.ssh/XXX",
+              "port": 0,
               "alert_tg_token": "",
               "alert_tg_group_id": "",
-              "loki_url": ""
+              "docker_network": "jinniu"
             }

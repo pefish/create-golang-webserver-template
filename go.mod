@@ -3,7 +3,7 @@ module package-name
 go 1.20
 
 require (
-	github.com/pefish/go-commander v0.8.0
+	github.com/pefish/go-commander v0.8.1
 	github.com/pefish/go-core v1.4.7
 	github.com/pefish/go-core-type v0.1.4
 	github.com/pefish/go-error v1.0.8
@@ -20,11 +20,13 @@ require (
 	github.com/go-playground/validator v9.31.0+incompatible // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/mux v1.8.1 // indirect
+	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
-	github.com/pefish/go-config v0.4.6 // indirect
+	github.com/pefish/go-config v0.4.8 // indirect
 	github.com/pefish/go-decimal v0.4.0 // indirect
 	github.com/pefish/go-desensitize v0.0.7 // indirect
+	github.com/pefish/go-file v0.2.3 // indirect
 	github.com/pefish/go-format v0.3.2 // indirect
 	github.com/pefish/go-json v0.1.7 // indirect
 	github.com/pefish/go-string v0.1.2 // indirect
