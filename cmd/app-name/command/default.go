@@ -10,7 +10,6 @@ import (
 	"github.com/pefish/go-core/driver/logger"
 	global_api_strategy "github.com/pefish/go-core/global-api-strategy"
 	"github.com/pefish/go-core/service"
-	go_logger "github.com/pefish/go-logger"
 	task_driver "github.com/pefish/go-task-driver"
 )
 
@@ -36,9 +35,9 @@ func (dc *DefaultCommand) OnExited(command *commander.Commander) error {
 
 func (dc *DefaultCommand) Init(command *commander.Commander) error {
 	service.Service.SetName(version.AppName)
-	logger.LoggerDriverInstance.Register(go_logger.Logger)
+	logger.LoggerDriverInstance.Register(command.Logger)
 
-	// go_mysql.MysqlInstance.SetLogger(go_logger.Logger)
+	// go_mysql.MysqlInstance.SetLogger(command.Logger)
 	// err = go_mysql.MysqlInstance.ConnectWithConfiguration(go_mysql.Configuration{
 	// 	Host:     global.GlobalConfig.DbHost,
 	// 	Port:     global.GlobalConfig.DbPort,

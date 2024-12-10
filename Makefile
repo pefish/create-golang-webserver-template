@@ -7,6 +7,7 @@ endif
 
 build-cur:
 	GOPATH=$(GOPATH) go install github.com/pefish/go-build-tool/cmd/...@latest
+	go mod tidy
 	$(GOPATH)/bin/go-build-tool
 
 install: build-cur
