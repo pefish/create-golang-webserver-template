@@ -9,9 +9,4 @@
 
 **/log
 
-**/secret/prod.yaml
-**/config/prod.yaml
-**/secret/local.yaml
-**/config/local.yaml
-**/secret/dev.yaml
-**/config/dev.yaml
+.env
